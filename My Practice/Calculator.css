@@ -1,0 +1,55 @@
+.Calci_Border {
+
+margin: 250px auto;
+width: 400px;
+height: 400px;
+background-color:rgba(36, 36, 75, 0.884);
+border-radius: 15px;
+color: white;
+}
+
+.image {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+h1 {
+/* display: inline; */
+margin-top: 50px;
+margin-bottom: 0em;
+font-size: 50px;
+font-weight: lighter;
+font-family: Arial, Helvetica, sans-serif;
+text-align: right;
+}
+
+table {
+    font-size: 30px;
+    margin-top: 300px;
+    text-align: center;
+    border:1px;
+/* border: 1px solid hotpink; */
+/* border-color: hotpink; */
+width: 400px;
+/* margin-top: 127px; */
+/* padding: 25px; */
+border-radius: 15px;
+border-color: black;
+margin: 0em;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: lighter;
+border-style: solid;
+}
+
+tr {
+
+    border: 1px solid black;
+}
+.Last {
+
+background-color: orange;
+/* border-color: orangered; */
+}
+
+
