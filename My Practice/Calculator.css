@@ -1,3 +1,13 @@
+.calculator {
+
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+
 .Calci_Border {
 
 margin: 250px auto;
@@ -6,6 +16,12 @@ height: 400px;
 background-color:rgba(36, 36, 75, 0.884);
 border-radius: 15px;
 color: white;
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-content: flex-end;
+
 }
 
 .image {
@@ -22,6 +38,14 @@ font-size: 50px;
 font-weight: lighter;
 font-family: Arial, Helvetica, sans-serif;
 text-align: right;
+}
+
+
+.table1 {
+
+display: inline-flex;
+align-items: flex-end;
+
 }
 
 table {
@@ -51,5 +75,3 @@ tr {
 background-color: orange;
 /* border-color: orangered; */
 }
-
-
