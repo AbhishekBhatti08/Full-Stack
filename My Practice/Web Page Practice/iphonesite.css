@@ -1,0 +1,162 @@
+head {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    margin: 0em;
+}
+
+header {
+    background-color: black;
+    display: flex;
+	width: 100%;
+	height: 10vh;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-container {
+}
+
+.applelogo{
+height: 20px;
+width: 30px;
+}
+
+
+nav  {
+display: flex;
+justify-content: space-between;
+color: whitesmoke;
+
+}
+
+
+nav li {
+
+display: inline-block;
+justify-content: space-around;
+padding: 0px 14px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 6px;
+    font-family: 'Roboto Condensed', sans-serif;
+    width:auto;
+   
+}
+
+.search {
+    height: 20px;
+    width: 20px;
+}
+
+
+.heading{
+display: flex;
+margin: 0px;
+padding: 0px 20px;
+justify-content: space-between;
+align-items: center;
+border-bottom-color: grey;
+border-bottom: .4px solid grey;
+height: 8vh;
+font-size: 6px;
+font-weight: bolder;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+.banner {
+
+    width: auto;
+    height: 180px;
+    display: flex;
+   }
+
+.iBanner{
+    background-color: tomato;
+    /* width: auto; */
+    height: 180px;
+    margin: 0px auto;
+}
+
+.buy    {
+
+background-color: #0071e3;
+width: 20px;
+height: 8px;
+border-radius: 15px;
+text-align:center;
+color: white;
+margin: 0px;
+
+}
+
+
+
+
+section {
+
+display: flex;
+height: 150px;
+}
+
+.presentation {
+    border: 2px brown;
+    display: flex;
+    margin: 0px;
+}
+
+.introduction {
+
+width: 200px;
+text-align: center;
+flex: 1;
+}
+.cover {
+    flex: 1;    
+}
+
+.iphoneimage {
+    width: 100px;
+    height: 130px;
+    margin-left: 80px;
+    margin-top: 10px;
+    animation: drop 3s ease;
+}
+
+h1 {
+    margin-left: 35px;
+    margin-top: 30px;
+    font-size: 16px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+
+    margin-top: 5px;
+	font-size: 8px;
+    color: #585772;
+    margin-left: 35px;
+    text-align: justify;
+}
+
+.select-mobile {
+display: flex;
+justify-content: flex-end;
+margin-right: 110px;
+}
+
+.browse {
+
+width: 10px;
+height: 10px;
+
+}

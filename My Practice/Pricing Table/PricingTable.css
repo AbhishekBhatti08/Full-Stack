@@ -3,8 +3,8 @@ outline: 5px solid rgba(206, 197, 197, 0.76);
 margin: 50px auto;
 border-width: 100px;
 border: 2px solid rgba(128, 128, 128, 0.815);
-width: 300px; 
-height:150px;
+width: 200px; 
+height:130px;
 background-color: rgba(245, 245, 245, 0.897)
 opacity: 0.2;
 }
@@ -20,7 +20,7 @@ align-items: center;
 height: 100px;
 width: 60px;
 border: .5px solid rgba(83, 82, 82, 0.459);
-margin-top: 20px;
+margin-top: 10px;
 
 }
 
@@ -90,14 +90,14 @@ display: block;
     height: 110px;
     width: 70;
     color: azure;   
-
+    
 }
 
     .two {
 
     background-color: white;
     color: black;
-    margin-top: 9px;
+    margin-top: 6px;
     }
 
     .content2 {
@@ -126,6 +126,10 @@ display: block;
        margin-bottom: 0em;
     }
 
+    .car {
+
+        margin-top: 20;
+    }
 .space {
     margin-top: 3px;
 }
