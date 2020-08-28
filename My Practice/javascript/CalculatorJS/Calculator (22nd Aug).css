@@ -48,6 +48,7 @@ background-color: #80647f;
 /* border-color: white; */
 border-inline: none;
 border: .1px solid rgb(72, 72, 114);
+outline: none;
 }
 
 button:hover {
