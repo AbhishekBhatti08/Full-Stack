@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #1D2B64;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+.cal-btn {
+
+    background-color: silver;
+    color: black;
+    width: 25px;
+    height: 45px;
+    border: 1px solid grey;
+    text-align: center;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 100;
+    padding-top: 3px;
+
+}
+
+.cal-btn:hover {
+background-color: orange;
+}
+
+.row   {
+
+    display: table;
+    table-layout: fixed;
+    width: 200px;
+
+}
+
+.column {
+
+display: table-cell;
+
+}
+
+#cal-zero {
+
+width: 52px;
+border-radius: 0 0 0 7px;
+
+}
+
+#cal-clear {
+
+    width: 52px;
+    
+    }
+
+#cal-display-val {
+
+height: 60px;
+color: white;
+text-align: right;
+border-left: 1px solid grey;
+border-top: 1px solid grey;
+border-right: 1px solid grey;
+font-size: 45px;
+background-color: rgba(44, 43, 43, 0.171);
+overflow: hidden;
+white-space: nowrap;
+padding: 12px;
+border-radius: 7px 7px 0 0;
+
+}
+
+.cal-btn-operator {
+
+    background-color: orange;
+    color: white;
+}
+
+#cal-equals {
+
+    border-radius: 0 0 7px 0;
+
+}
+
+
+#cal-parent {
+margin-top: 100px;
+margin-left: 435px;
+
+}
+
