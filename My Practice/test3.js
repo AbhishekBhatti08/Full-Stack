@@ -1,33 +1,35 @@
 
 
-
-// var min = 60;
-
-// var myfunc = (min) => {
-
-//   if (min > 0) {
-
-//     console.log(min--);
-
-//   }
-
-//   else console.log("Hello");
-// }
-
-// var counter = setInterval(() => {
-//   myfunc
-// }, 1000);
-
-// clearInterval(counter);
+// var input = false;
 
 
-var i = 60;
+// var a = new Promise ( (resolve, reject)  => {
 
-if (i > 0) {
 
-  i--;
+//     if (input === true) {
 
-  console.log(i);
+//         resolve('promise completed');
+//     }
 
-  else console.log("Hello");
-}
+//     else 
+    
+//     reject ('promise rejected');
+
+// })
+
+// a.then((x)=> {
+//     console.log(x);
+//     return x;
+// }).then((x)=>{
+// console.log(x);
+
+// }).catch(()=> {
+
+// console.log('Promise is rejected');
+
+
+
+// })
+
+
+
