@@ -1,0 +1,94 @@
+* {
+
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box; 
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.header {
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+flex: 1;
+text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(26, 23, 23);
+}
+
+p{
+    color: rgb(26, 23, 23);
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px  25px;
+}
+
+.row    {
+
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+
+.col-2  {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+
+.col-2  img{
+    max-width: 100%;
+    padding: 50px 0;
+
+}
+
+.col-2  h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn    {
+
+    display: inline-block;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 30px;
+}
+
+.btn {background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)}
+.btn:hover { background-position: right center; }

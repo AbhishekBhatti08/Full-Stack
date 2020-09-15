@@ -1,0 +1,26 @@
+code editors -> VS code, sublime text, brackets, vim, emacs and alot more. (front-end)
+
+HTML -> hyper text markup language. (used for structering / skeleton)
+
+There are two types of tags:
+1. Opening-closing tags (90%)
+2. Non-closing tags (10%)
+
+<p> ->  paragraph tag Opening tag
+</p> -> paragraph tag Closing tag
+
+<br> ->  break line
+
+<a href, target> -> anchor tag href and target are attributes.
+
+h1,h2,h3,h4,h5,h6 -> heading 
+
+hr -> horizontal line.
+
+img -> for putting images into our file.
+
+four main types of sending data to the server:
+1. get request -> give me data ()
+2. post request -> take data from me.
+3. put request -> take data from me and update if their is no\existing data data (update).
+4. delete request -> delete the data which i am requesting to.

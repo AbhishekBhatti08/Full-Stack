@@ -1,0 +1,26 @@
+.container    {
+    width:200px;
+    background: rgb(187, 33, 33);
+    height:150px;
+    margin:auto;
+    display: flex;
+align-items: center;
+}
+
+.box1 {
+
+width: 80%;
+background: darkorange;
+height: 80%;
+margin: auto;
+display: flex;
+align-items: center;
+}
+
+.box2 {
+
+    width: 50%;
+    background:greenyellow;
+    height: 50%;
+    margin: auto;
+    }

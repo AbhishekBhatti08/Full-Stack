@@ -1,0 +1,21 @@
+* {
+box-sizing: border-box;
+}
+
+.container {
+background-color: darkblue;
+display: flex;
+flex-wrap: wrap;
+width: 30vw;
+margin: 0 auto;
+}
+
+.button {
+width: 25%;
+height: 30px;
+text-align: center;
+}
+
+.lastThird{
+    flex-grow: 2;
+}

@@ -1,0 +1,31 @@
+.flex-container {
+    margin: 100px auto;
+    display: flex;
+    background-color: chartreuse;
+    width: 80vw; height: 50vw;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+
+
+.flex-container > div
+{
+height: 20px;
+width: 20px;
+background-color: blue;
+padding: 10px;
+margin: 10px 10px;
+
+}
+
+.flex-container .second {
+
+border-style: solid;
+border-collapse: collapse;
+}
+}
+
