@@ -18,6 +18,13 @@ body {
     
 }
 
+header .row {
+
+margin-top: 70px;
+
+}
+
+
 .navbar {
     display: flex;
     align-items: center;
