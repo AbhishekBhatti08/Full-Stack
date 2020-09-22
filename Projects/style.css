@@ -394,6 +394,8 @@ margin: 20px 0;
         left: 0;
         background: #333;
         width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
     }
 
     nav ul li{
@@ -414,5 +416,27 @@ margin: 20px 0;
         display: inline-block;
         cursor: pointer;
     }
+
+}
+
+
+/* Media Query for less than 600 screensize */
+
+@media only screen and (max-width: 600px) {
+
+.row, .app-logo {
+
+    text-align: center;
+    
+}
+
+.col-2, .col-3, .col-4 {
+
+    flex-basis: 100%;
+
+}
+
+
+
 
 }
