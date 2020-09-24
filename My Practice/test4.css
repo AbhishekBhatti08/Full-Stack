@@ -1,0 +1,29 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+
+margin: 0%;
+
+}
+
+.nav {
+
+display: flex;
+justify-content: space-between;
+height: 5vh;
+background: slateblue;
+align-items: center;
+}
+
+p {
+
+    /* display: inline-block; */
+    /* justify-content: space-around; */
+   color: snow;
+   margin: 0px 10px;
+   
+
+}
+
