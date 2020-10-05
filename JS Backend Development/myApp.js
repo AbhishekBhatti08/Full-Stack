@@ -1,28 +1,89 @@
-
-
-const express = require("express");
+var express = require('express');
+var bodyParser = require('body-parser');
+const { response } = require('express');
 
 var app = express();
 var port = 3000;
 
+app.use(bodyParser.urlencoded({extended:true}))
+//making routes.
+// static assests -> public -> styles, images and icons, etc.
+// pages -> views
+// use and set?
+//
 app.use(express.static("public")); // to specify to look out static assets in public folder.
-app.set("view engine","ejs");
+app.set("view engine","ejs"); // view engine is a engine which views/renders the page, you gotta specify which templating engine you are using.
 
-app.get("/",(req,res) => {
-    
-    res.render("city");
-    
+app.get("/",(req,res)=>{
+  res.render("home")
 })
 
-app.get("/europe",(req,res)=>{
-    res.render("eu")
-  })
+var recipes = [{
+  name:"Burger",
+  imgUrl:"http://localhost:3000/burger.jpg"
+},{
+  name:"Pizza",
+  imgUrl:""
+},{
+  name:"Lasagna",
+  imgUrl:""
+},{
+  name:"Mojito",
+  imgUrl:""
+}];
+app.get("/recipes",(req,res)=>{
+  res.render("recipes",{recipes:recipes});
+})
 
-app.get("/europe/:london",(req,res)=>{
-    var x = req.params.london;
-    res.render("london",{city:x});
-  })
-  
+var restaurant = [{
+  name:"Om Sweets & Snacks",
+  imgUrl:""
+},{
+  name:"Dominos Pizza",
+  imgUrl:""
+},{
+  name:"Diggin",
+  imgUrl:""
+},{
+  name:"The Big Chill Cafe",
+  imgUrl:""
+}];
+
+app.get("/recipes",(req,res)=>{
+  res.render("recipes",{recipes:recipes});
+})
+
+app.get("/restaurant",(req,res)=>{
+  // var x = req.params.restaurant;
+  res.render("restaurant",{restaurant:restaurant});
+})
+
+// app.get("/dogs/:breed",(req,res)=>{
+//   var x = req.params.breed;
+//   res.render("breed",{dogBreed:x});
+// })
+
+app.post("/addRecipe",(req,res)=>{
+  var obj = {
+            name:req.body.recipeName,
+            imgUrl:"",
+            };
+  recipes.push(obj);
+  res.redirect("/recipes");
+})
+
+app.post("/addRes",(req,res)=>{
+  var obj = {
+            name:req.body.resName,
+            imgUrl:"",
+            };
+  restaurant.push(obj);
+  res.redirect("/restaurant");
+})
+
+
+
+
 app.listen(port, function(){
     console.log('server running on '+ port);
 })
