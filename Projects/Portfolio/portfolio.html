@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE-edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./portfolio.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>Abhishek Portfolio</title>
+
+
+</head>
+
+<body>
+
+    <section>
+
+        <nav>
+
+            <a href="#" class="logo">Abhishek Profile </a>
+
+            <ul id="menuitems">
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Team</a></li>
+
+            </ul>
+
+            <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
+            <!-- <div class="toggle"></div> -->
+
+        </nav>
+
+        <div class="text-container">
+
+            <p>Hello</p>
+            <p>I am Abhishek</p>
+            <p>I am a front end developer</p>
+            <button class="hire-btn">Hire me</button>
+            <button class="down-cv">Download CV</button>
+
+        </div>
+
+        <img src="./images/model.png" alt="model" class="model">
+
+
+    </section>
+
+    <!-- About Section -->
+
+    <div class="about-container">
+
+        <img src="./images/about-img.png" alt="" srcset="">
+        <div class="about-text">
+            <p>About me</p>
+            <p>Front End Developer</p>
+            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                placeat facere possimus,
+                omnis voluptas assumenda est, omnis dolor repellendus</p>
+            <p>when our power of choice is untrammelled and when nothing prevents our being able to do what we like
+                best,
+                every pleasure is to be welcomed and every pain avoided</p>
+
+            <button>Hire me</button>
+            <button>Download CV</button>
+
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+
+        <div class="services-text">
+
+            <p>Services</p>
+            <p>Services Required</p>
+            <p>when our power of choice is untrammelled and when nothing prevents our being able to do what we like
+                best,
+                every pleasure is to be welcomed and every pain avoided</p>
+
+        </div>
+        <div class="box-container">
+
+            <div class="box-1">
+                <span>1</span>
+                <p class="heading">Front End Developer</p>
+                <p class="details">when our power of choice is untrammelled and when nothing prevents our being able to
+                    do what we like best,
+                    every pleasure is to be welcomed and every pain avoided
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="box-2">
+                <span>2</span>
+                <p class="heading">Web Development</p>
+                <p class="details">when our power of choice is untrammelled and when nothing prevents our being able to
+                    do what we like best,
+                    every pleasure is to be welcomed and every pain avoided
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="box-3">
+                <span>3</span>
+                <p class="heading">Web Development</p>
+                <p class="details">when our power of choice is untrammelled and when nothing prevents our being able to
+                    do what we like best,
+                    every pleasure is to be welcomed and every pain avoided
+                </p>
+                <button>Read More</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Contact Section -->
+
+    <div class="contact-me">
+
+
+        <p>If you have any project in mind</p>
+        <button>Contact me</button>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>Abhishek Portfolio</p>
+        <p>when our power of choice is untrammelled and when nothing prevents our being able to
+            do what we like best,
+            every pleasure is to be welcomed and every pain avoided
+        </p>
+
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <p>Copyright - Abhishek Portfolio</p>
+    </footer>
+
+    <div class="a-social-b">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle() {
+
+            if (menuitems.style.maxHeight == "0px")
+
+                menuitems.style.maxHeight = "200px"
+
+            else
+
+                menuitems.style.maxHeight = "0px";
+
+        }
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
