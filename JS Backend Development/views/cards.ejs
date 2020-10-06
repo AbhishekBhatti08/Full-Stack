@@ -1,0 +1,10 @@
+<form action="/search" method="POST">
+    <input type="text" name="count">
+    <input type="submit" name="submit" id="submit">
+</form>
+
+<div class="container">
+    <% data.forEach((cards)=>{ %>
+        <%=cards.images%>
+     <% }) %>
+ </div>
