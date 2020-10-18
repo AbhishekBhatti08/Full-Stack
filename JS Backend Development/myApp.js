@@ -106,6 +106,11 @@ app.get("/cards",(req,res)=>{
   res.render("cards");
 })
 
+app.get("/viewCards",(req,res)=>{
+  res.render("viewCards");
+})
+
+
 app.post("/search",(req,response)=>{
   var count = req.body.count;
   var url = `https://deckofcardsapi.com/api/deck/new/draw/?count=${count}`;
@@ -114,7 +119,7 @@ app.post("/search",(req,response)=>{
 
     console.log(res.data.cards);
 
-    response.render("cards",{data:res.data.cards});
+    response.render("viewCards",{data:res.data.cards});
 
   }).catch((err)=>{
         console.log(err)
