@@ -28,13 +28,15 @@ app.get("/cards",(req,res)=>{
   
   app.post("/search",(req,response)=>{
     var count = req.body.count;
-    var url = `https://deckofcardsapi.com/api/deck/new/draw/?count=${count}`;
-    console.log(count);
+    // var url = `https://deckofcardsapi.com/api/deck/new/draw/?count=${count}`;
+
+    var url =  `https://official-joke-api.appspot.com/random_joke`;    
+    console.log(url);
     axios.get(url).then((res)=> {
   
-      console.log(res.data.cards);
+      console.log(res);
   
-      response.render("viewCards",{data:res.data.cards});
+      // response.render("viewCards",{data:res.data.cards});
   
     }).catch((err)=>{
           console.log(err)

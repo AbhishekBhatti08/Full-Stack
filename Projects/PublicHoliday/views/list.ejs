@@ -1,0 +1,65 @@
+<style>
+body {
+    background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1 {
+
+margin-top: 30px;
+    text-align: center;
+
+} 
+
+table{
+
+    border: 2px solid grey;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0px;
+    width: 600px;
+    text-align: center;
+
+}
+
+tr, th, td {
+
+    border: 1px solid grey;
+}
+
+th {
+
+    background-color: black;
+    color: whitesmoke;
+    font-weight: 900;
+}
+
+td{
+
+    font-weight: bold;
+
+}
+
+</style>
+
+
+
+<h1>Next Public Holidays in <%= data.country %> </h1>
+
+<table>
+   <tr>
+    <th>Date</th>
+    <th>Local Name</th>
+    <th>English Name</th>
+</tr>
+  <% data.data.forEach((list)=>{ %>
+     <tr>
+        <td><%= list.date%></td>
+        <td><%= list.localName%></td>
+        <td><%= list.name%></td>
+    </tr>
+  <% }) %>
+
+</table>
