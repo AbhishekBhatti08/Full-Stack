@@ -22,22 +22,34 @@
 
         }
 
-/* ----------------------- Left Section Styling   ---------------------------------------------------------*/
+        /* ----------------------- Left Section Styling   ---------------------------------------------------------*/
 
 
 
-        .left-section{
+        .left-section {
             display: block;
             width: 300px;
-            
+
         }
 
-        .twitterLogo    {
+        /* nav {
+            display: none;
+        } */
+        
+        .sidepanel {
+            display: none;
+        }
+
+        .openbtn {
+            display: none;
+        }
+
+        .twitterLogo {
             border-radius: 50%;
             margin-left: 35px;
             margin-top: 10px;
             margin-bottom: 20px;
-            
+
         }
 
         .imgLogo {
@@ -45,7 +57,13 @@
             width: 3em;
         }
 
-        .explore, .homeLogo, .notifications, .messages, .profile, .more, .btn-primary {
+        .explore,
+        .homeLogo,
+        .notifications,
+        .messages,
+        .profile,
+        .more,
+        .btn-primary {
             display: flex;
             margin-bottom: 20px;
             margin-left: 20px;
@@ -58,21 +76,28 @@
             /* background-color: coral; */
         }
 
-        .explore:hover, .homeLogo:hover, .notifications:hover, .messages:hover, .profile:hover, 
-        .more:hover, .primaryButton:hover, .bi-three-dots:hover {
+        .explore:hover,
+        .homeLogo:hover,
+        .notifications:hover,
+        .messages:hover,
+        .profile:hover,
+        .more:hover,
+        .primaryButton:hover,
+        .bi-three-dots:hover {
 
             background-color: #d8ecf3;
-            color:   #1DA1F2;
+            color: #1DA1F2;
             cursor: pointer;
             /* border-color: #1DA1F2; */
 
         }
 
-         /* {
+        /* {
             border-color: #1DA1F2;
         } */
-        
-        h3,.bi {
+
+        h3,
+        .bi {
             display: inline-block;
             margin-left: 20px;
         }
@@ -84,8 +109,9 @@
         .bi-three-dots {
             border-radius: 50%;
             /* border: 2px solid black; */
-            
+
         }
+
         .primaryButton {
             border-radius: 15px;
             width: 235px;
@@ -101,25 +127,36 @@
         .tweet {
             margin: 5px auto;
             font-size: 20px;
-            
+
         }
 
 
-/* ------------------------------Main Section Styling------------------------------------------------------- */
+        /* ------------------------------Main Section Styling------------------------------------------------------- */
+
+       
+
 
         .header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             border: 2px solid #d3d3d3;
-            border-top:  0px;
+            border-top: 0px;
             width: 600px;
             height: 60px;
             padding: 10px;
             font-weight: bolder;
-            
+
         }
-        
+
+        span {
+            display: none;
+        }
+
+        .person-icon {
+            display: none;
+        }
+
         .writeTweet {
             border: 2px solid #d3d3d3;
             border-top: 0px;
@@ -129,13 +166,13 @@
         }
 
         .bi-signpost {
-            color:   #1DA1F2;
+            color: #1DA1F2;
         }
 
 
         .tweetLine1 {
             display: flex;
-            align-items:center;
+            align-items: center;
             Height: 80px;
         }
 
@@ -156,29 +193,29 @@
 
         .tweetLine2 {
             display: flex;
-            align-items:baseline;
+            align-items: baseline;
             margin-left: 80px;
             /* padding-top: 10px; */
             margin-top: 10px;
             justify-content: space-between;
             /* align-items: center; */
-            color:   #1DA1F2;
-    
+            color: #1DA1F2;
+
         }
 
         .tweetButton {
-           width: 70px;
-           height: 35px;
-           justify-content: space-between;
-                       
-        } 
+            width: 70px;
+            height: 35px;
+            justify-content: space-between;
+
+        }
 
         .status {
             display: flex;
-            align-items:center;
+            align-items: center;
             margin-left: 80px;
             border-bottom: 1px solid #d3d3d3;
-            
+
 
         }
 
@@ -186,52 +223,57 @@
             margin: 0px;
             padding: 10px;
             font-weight: bolder;
-            color:   #1DA1F2;
+            color: #1DA1F2;
         }
 
-        .bi-image, .bi-globe2 {
+        .bi-image,
+        .bi-globe2 {
             margin-left: 0px;
 
         }
 
-     
+
 
         .bi-globe2 {
-            color:   #1DA1F2;
+            color: #1DA1F2;
         }
 
-        .bi-file-arrow-up, .bi-file-bar-graph, .bi-emoji-smile, .bi-calendar2 {
+        .bi-file-arrow-up,
+        .bi-file-bar-graph,
+        .bi-emoji-smile,
+        .bi-calendar2 {
             margin-left: 10px;
-        } 
+        }
 
-/* ---------------------------------------------Main Tweet Styling --------------------------------------------*/
+        /* ---------------------------------------------Main Tweet Styling --------------------------------------------*/
         .container {
 
-           padding: 0px;
-           padding: 0px;
-           border: 2px solid #d3d3d3;
-           
+            padding: 0px;
+            padding: 0px;
+            border: 2px solid #d3d3d3;
+            /* width: 500px; */
+
         }
 
         .tweets {
             margin: 0px;
             padding: 0px;
-            
+
             border-top: 0px;
             border-left: 20px;
         }
 
         .tweet-head {
             display: flex;
-            align-items: center; 
-            justify-content: space-between;          
-            
+            align-items: center;
+            justify-content: space-between;
+
         }
 
         .left-head {
             display: flex;
             align-items: center;
-            
+
         }
 
         .username {
@@ -239,7 +281,7 @@
             border: 0px;
             font-size: 20px;
         }
-        
+
         .dots {
 
             padding: 10px;
@@ -259,41 +301,49 @@
             margin-left: 80px;
             display: flex;
             align-items: center;
-            
-        
+
+
 
         }
 
         .footer-icons {
-                width: 400px;
-                display: flex;
-                justify-content: space-between;
-                              
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+
         }
 
 
-        .bi-arrow-bar-up, .bi-heart, .bi-arrow-repeat, .bi-chat {
+        .bi-arrow-bar-up,
+        .bi-heart,
+        .bi-arrow-repeat,
+        .bi-chat {
             margin: 0px;
         }
 
-        .bi-arrow-bar-up:hover,.bi-arrow-repeat:hover, .bi-chat:hover {
+        .bi-arrow-bar-up:hover,
+        .bi-arrow-repeat:hover,
+        .bi-chat:hover {
 
-            color:   #1DA1F2;
-            border-radius: 50% ;
+            color: #1DA1F2;
+            border-radius: 50%;
             cursor: pointer;
         }
 
         .bi-heart:hover {
-            color:#ff4c4c;
+            color: #ff4c4c;
             cursor: pointer;
         }
 
 
-/* ---------------------------------- Right Column Styling-------------------------------------------------- */
+        /* ---------------------------------- Right Column Styling-------------------------------------------------- */
 
         .right-column {
             /* background-color: hotpink; */
             width: 100%;
+            /* display: flex; */
+
+
         }
 
         .search {
@@ -305,7 +355,12 @@
             height: 45px;
             border-radius: 25px;
             color: grey;
-            background-color: #e5e5e5;
+            background-color: #E8F6FE;
+        }
+
+        .search:hover {
+            cursor: pointer;
+            background-color: #BBE3FB;
         }
 
         .search-content {
@@ -313,192 +368,575 @@
             margin-left: 20px;
         }
 
+        .updates {
+            background-color: #E8F6FE;
+            margin: 0px 20px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 550px;
+            border-radius: 15px;
+
+        }
+
+        .updates-header {
+            padding: 10px;
+            font-weight: bolder;
+            font-size: larger;
+
+        }
+
+        .updates-header:hover {
+            cursor: pointer;
+            background-color: #BBE3FB;
+            
+        }
+
+        .update-1 {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .update-1:hover{
+            background-color: #BBE3FB;
+            cursor: pointer;
+        }
+
+
+        .ipl-image {
+            height: 90px;
+            width: 110px;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .above-hash {
+            display: flex;
+            padding-left: 10px;
+            font-size: smaller;
+        }
+
+        .news-1 {
+            padding-left: 10px;
+        }
+
+        .sub-newsheading {
+            font-size: smaller;
+        }
+
+        .news-content {
+            font-weight: bold;
+        }
+
+        .follow-content{
+            display: flex;
+
+        }
+
+        .follow-section {
+            /* background-color: #e5e5ff; */
+            background-color: #E8F6FE;
+            margin: 40px 20px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 530px;
+            border-radius: 15px;
+            /* display: flex; */
+
+        }
+
+
+        .follow-header {
+            margin: 0%;
+            /* background-color: coral; */
+        }
+
+        .follow-content1{
+            display: flex;
+            align-items: unset;
+            margin-top: 15px;
+        }
+
+
+        .img-follow {
+            border-radius: 50%;
+            width: 5em;
+            height: 5em;
+            padding: 10px;
+        }
+
+        .follow-icon{
+            height: 1em;
+            width: 1em;
+        }
+
+        .follow-button {
+            border: 1px solid #1DA1F2;
+            border-radius: 25px;
+            /* background-color: coral; */
+            padding: 0%;
+            color: #1DA1F2;
+            font-weight: bolder;  
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            margin-left: 10px;          
+        }
+
+        .follow-button:hover {
+            cursor: pointer;
+            background-color:  #1DA1F2;
+            color: whitesmoke;
+        }
+
+        .above-hash:hover {
+        cursor: pointer;
+        background-color: #BBE3FB;
+        }
+
+        .follow-content:hover{
+            cursor: pointer;
+        background-color: #BBE3FB;
+
+        }
+
+
+/* -------------------------------------------Media Query--------------------------------------- */
+
+            @media screen and (min-width: 320px) and (max-width: 480px) {
+
+            * {
+                box-sizing: border-box;
+                
+            }    
+
+            body {
+                /* background-color: tomato; */
+            }
+            .left-section {
+                display: none;
+                background-color: teal;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                margin-top: 20px;
+            }
+
+            .right-column {
+                display: none;
+
+            }
+
+
+            .main{
+                width: 100%;
+                             
+
+            }
+
+            .subSection{
+                width: 100%;
+
+            }
+
+            .header {
+                width: 100%;
+
+            }
+            .container {
+                width: 100%;
+                /* padding: 0 10px; */
+                /* background-color: teal; */
+            }
+
+            .bi-signpost {
+                margin-right: 10px;
+            }
+            .header {
+                /* display: inline-block; */
+                margin: 0px;
+                /* background-color: teal; */
+                align-items: center;
+                padding: 0px;
+
+            }
+            .person-icon {
+                float: left;
+                display: block;
+                padding: 0px;
+                /* background-color: teal; */
+                margin-left: 0px;
+            }
+
+           .footer-icons {
+               margin-right: 30px;
+           }
+
+            .bi-file-arrow-up,
+            .bi-file-bar-graph,
+            .bi-emoji-smile,
+            .bi-calendar2 {
+            height: 1em;
+            width: 1em;
+        }
+
+
+           /* nav {
+            margin-top: 200px;
+           }
+
+           nav ul li a{
+               text-decoration: none;
+               font-weight: bolder;
+               color: black;
+           }
+
+           nav {
+            width: 100px;
+            height: 500px; */
+            /* display: none; */
+            /* background-color: tomato;
+            margin-top: 200px;
+            position: absolute;
+            
+           } */
+           
+           /* nav.show { */
+            /* display: block; */
+           /* } */
+
+
+/* ------------------------------------------Side Panel Styling --------------------------------------------*/
+           .sidepanel  {
+               display: block;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            height: 400px;
+            top: 60px;
+            left: 0;
+            background-color: white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            border-bottom:1px solid thistle;
+            border-right: 1px solid thistle;
+            }
+
+            .sidepanel a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #1DA1F2;
+            display: block;
+            transition: 0.3s;
+            }
+
+            /* .sidepanel a:hover {
+            color: #f1f1f1;
+            } */
+
+            .anchor:hover {
+                color: black;
+            }
+
+            .sidepanel .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            }
+
+            .openbtn {
+            display: block;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: white;
+            color: #1DA1F2;;
+            padding: 10px 15px;
+            border: none;
+            }
+
+            .openbtn:hover {
+            background-color:#444;
+            }
+            
+
+
+
+
+        }   
+
+
     </style>
 
 
 
-<section>
+    <section>
 
-    <div class="left-section">
+        <div class="left-section">
 
-        <div class="twitterLogo">
-            <img src="https://img.icons8.com/cute-clipart/64/000000/twitter.png" class="imgLogo">
+           
+            <div class="twitterLogo">
+                <img src="https://img.icons8.com/cute-clipart/64/000000/twitter.png" class="imgLogo">
+            </div>
+
+
+            <div class="homeLogo">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    <path fill-rule="evenodd"
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
+                <h3>Home</h3>
+
+            </div>
+
+            <div class="explore">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-hash" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z" />
+                </svg>
+                <h3>Explore</h3>
+            </div>
+
+
+            <div class="notifications">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z" />
+                    <path fill-rule="evenodd"
+                        d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                </svg>
+
+                <h3>Notifications</h3>
+            </div>
+
+            <div class="messages">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                </svg>
+                <h3>Messages</h3>
+
+            </div>
+
+            <div class="profile">
+
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg>
+                <h3>Profile</h3>
+
+            </div>
+
+            <div class="more">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                </svg>
+                <h3>More</h3>
+
+            </div>
+
+            <a class="btn primaryButton btn-primary" href="http://localhost:4000/tweet" role="button">
+                <p class="tweet">Tweet</p>
+            </a>
+
         </div>
-        
-        
-        <div class="homeLogo">
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-                d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-            <path fill-rule="evenodd"
-                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-            </svg>
-            <h3>Home</h3>
-
-        </div>
-
-        <div class="explore">
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-hash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
-            </svg>
-            <h3>Explore</h3>
-        </div>
-        
-
-        <div class="notifications">
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
-                <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
-              </svg>
-
-              <h3>Notifications</h3>  
-        </div>
-
-        <div class="messages">
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-            </svg>
-            <h3>Messages</h3>  
-        
-        </div>
-
-        <div class="profile">
-
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-            </svg>
-            <h3>Profile</h3> 
-
-        </div>
-
-        <div class="more">
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-              </svg>
-              <h3>More</h3>       
-
-        </div>
-
-        <a class="btn primaryButton btn-primary" href="http://localhost:4000/tweet" role="button"> <p class="tweet">Tweet</p></a>
-
-    </div>
 
 
-<!-- ------------------------Main Section Working -------------------------------------------- -->
+        <!-- ------------------------Main Section Working -------------------------------------------- -->
 
     </section>
 
     <div class="main">
         <div class="subSection">
             <div class="header">
+
+                <!-- <div class="person-icon"  onclick="myFunction()" id="list">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                    </div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+    
+                <nav   class="show">
+    
+                    <ul>
+    
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Explore</a></li>
+                        <li><a href="">Notifications</a></li>
+                        <li><a href="">Messages</a></li>
+                        <li><a href="">Profile</a></li>
+    
+    
+                    </ul>
+    
+                </nav> -->
+
+                
+                    <div id="mySidepanel" class="sidepanel">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a class="anchor" href="">Home</a>
+                        <a class="anchor" href="">Explore</a>
+                        <a class="anchor" href="">Notifications</a>
+                        <a class="anchor" href="">Messages</a>
+                        <a class="anchor" href="">Profile</a>
+                    </div>
+
+                    <button class="openbtn" onclick="openNav()">☰</button>  
+
+
+
+
+
+               
                 <h4>Home</h4>
-                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-signpost" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 1.414V4h2V1.414a1 1 0 0 0-2 0z"/>
-                    <path fill-rule="evenodd" d="M12.532 5H2v4h10.532l1.666-2-1.666-2zM2 4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h10.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H2z"/>
-                    <path d="M7 10h2v6H7v-6z"/>
-                  </svg>
+                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-signpost" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1.414V4h2V1.414a1 1 0 0 0-2 0z" />
+                    <path fill-rule="evenodd"
+                        d="M12.532 5H2v4h10.532l1.666-2-1.666-2zM2 4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h10.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H2z" />
+                    <path d="M7 10h2v6H7v-6z" />
+                </svg>
             </div>
 
             <div class="writeTweet">
 
                 <div class="tweetLine1">
 
-                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
-                        <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                        <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
-                      </svg>
+                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+                        <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        <path fill-rule="evenodd"
+                            d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                    </svg>
                     <p class="placeholder">What's happening?</p>
 
                 </div>
 
                 <div class="status">
 
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-globe2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539a8.372 8.372 0 0 1-1.198-.49 7.01 7.01 0 0 1 2.276-1.52 6.7 6.7 0 0 0-.597.932 8.854 8.854 0 0 0-.48 1.079zM3.509 7.5H1.017A6.964 6.964 0 0 1 2.38 3.825c.47.258.995.482 1.565.667A13.4 13.4 0 0 0 3.508 7.5zm1.4-2.741c.808.187 1.681.301 2.591.332V7.5H4.51c.035-.987.176-1.914.399-2.741zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5H7.5v2.409c-.91.03-1.783.145-2.591.332a12.343 12.343 0 0 1-.4-2.741zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696A12.63 12.63 0 0 1 7.5 11.91v3.014c-.67-.204-1.335-.82-1.887-1.855a7.776 7.776 0 0 1-.395-.872zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964a9.083 9.083 0 0 0-1.565.667A6.963 6.963 0 0 1 1.018 8.5h2.49a13.36 13.36 0 0 0 .437 3.008zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909c.81.03 1.577.13 2.282.287-.12.312-.252.604-.395.872-.552 1.035-1.218 1.65-1.887 1.855V11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5h-2.49a13.361 13.361 0 0 0-.437-3.008 9.123 9.123 0 0 0 1.565-.667A6.963 6.963 0 0 1 14.982 7.5zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343c-.705.157-1.473.257-2.282.287V1.077c.67.204 1.335.82 1.887 1.855.143.268.276.56.395.872z"/>
-                      </svg>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-globe2" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539a8.372 8.372 0 0 1-1.198-.49 7.01 7.01 0 0 1 2.276-1.52 6.7 6.7 0 0 0-.597.932 8.854 8.854 0 0 0-.48 1.079zM3.509 7.5H1.017A6.964 6.964 0 0 1 2.38 3.825c.47.258.995.482 1.565.667A13.4 13.4 0 0 0 3.508 7.5zm1.4-2.741c.808.187 1.681.301 2.591.332V7.5H4.51c.035-.987.176-1.914.399-2.741zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5H7.5v2.409c-.91.03-1.783.145-2.591.332a12.343 12.343 0 0 1-.4-2.741zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696A12.63 12.63 0 0 1 7.5 11.91v3.014c-.67-.204-1.335-.82-1.887-1.855a7.776 7.776 0 0 1-.395-.872zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964a9.083 9.083 0 0 0-1.565.667A6.963 6.963 0 0 1 1.018 8.5h2.49a13.36 13.36 0 0 0 .437 3.008zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909c.81.03 1.577.13 2.282.287-.12.312-.252.604-.395.872-.552 1.035-1.218 1.65-1.887 1.855V11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5h-2.49a13.361 13.361 0 0 0-.437-3.008 9.123 9.123 0 0 0 1.565-.667A6.963 6.963 0 0 1 14.982 7.5zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343c-.705.157-1.473.257-2.282.287V1.077c.67.204 1.335.82 1.887 1.855.143.268.276.56.395.872z" />
+                    </svg>
 
                     <p class="whoCan">Everyone can reply</p>
 
                 </div>
-                
+
                 <div class="tweetLine2">
 
-                        <div class="icons">
-                            <svg width="1.5em" height="1.5em" viewBox="0 0 17 16" class="bi bi-image" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M14.002 2h-12a1 1 0 0 0-1 1v9l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094L15.002 9.5V3a1 1 0 0 0-1-1zm-12-1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm4 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                            </svg>
-                            
-                            <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-file-arrow-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                                <path fill-rule="evenodd" d="M8 11a.5.5 0 0 0 .5-.5V6.707l1.146 1.147a.5.5 0 0 0 .708-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L7.5 6.707V10.5a.5.5 0 0 0 .5.5z"/>
-                            </svg>
-        
-                            <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-file-bar-graph" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                                <path d="M4.5 12a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1zm3 0a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm3 0a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1z"/>
-                            </svg>
-        
-                            <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-emoji-smile" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                <path fill-rule="evenodd" d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683z"/>
-                                <path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
-                            </svg>
-        
-                            <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-calendar2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
-                                <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/>
-                            </svg>
+                    <div class="icons">
+                        <svg width="1.5em" height="1.5em" viewBox="0 0 17 16" class="bi bi-image" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M14.002 2h-12a1 1 0 0 0-1 1v9l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094L15.002 9.5V3a1 1 0 0 0-1-1zm-12-1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm4 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                        </svg>
 
-                            </div>
-                    
-                        <div class="twButton">
+                        <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-file-arrow-up"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z" />
+                            <path fill-rule="evenodd"
+                                d="M8 11a.5.5 0 0 0 .5-.5V6.707l1.146 1.147a.5.5 0 0 0 .708-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L7.5 6.707V10.5a.5.5 0 0 0 .5.5z" />
+                        </svg>
 
-                        <a class=" tweetButton btn btn-primary" href="http://localhost:4000/tweet" role="button">Tweet</a>
+                        <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-file-bar-graph"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z" />
+                            <path
+                                d="M4.5 12a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1zm3 0a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm3 0a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1z" />
+                        </svg>
 
-                        </div>
+                        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-emoji-smile"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path fill-rule="evenodd"
+                                d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683z" />
+                            <path
+                                d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+                        </svg>
 
-                      
+                        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-calendar2"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
+                            <path
+                                d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z" />
+                        </svg>
 
-                      <!-- <a class="btn btn-primary" href="http://localhost:4000/tweet" role="button"> <p class="tweet">Tweet</p></a> -->
+                    </div>
+
+                    <div class="twButton">
+
+                        <a class=" tweetButton btn btn-primary" href="http://localhost:4000/tweet"
+                            role="button">Tweet</a>
+
+                    </div>
+
+
+
+                    <!-- <a class="btn btn-primary" href="http://localhost:4000/tweet" role="button"> <p class="tweet">Tweet</p></a> -->
 
                 </div>
 
 
-                
+
             </div>
-           
+
 
         </div>
 
         <hr style="height: 8px; background-color:  #d3d3d3; margin: 0px;   
-        " >
-        
-        <div class="container">    
-            <% for(var i in data) {%>
-                <div class="tweet-head">
-                    <div class="left-head">
-                        <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
-                            <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                            <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
-                        </svg>   
-    
-                        <h1 class="username"> <%= data[i]["username"] %></h1>
+        ">
 
-                    </div>
-                
-                <div class="dots">
-                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                      </svg>
-                </div>    
-                   
+        <div class="container">
+            <% for(var i in data) {%>
+            <div class="tweet-head">
+                <div class="left-head">
+                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+                        <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        <path fill-rule="evenodd"
+                            d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                    </svg>
+
+                    <h1 class="username"> <%= data[i]["username"] %></h1>
+
                 </div>
-                
+
+                <div class="dots">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                    </svg>
+                </div>
+
+            </div>
+
             <div class="tweets">
-            
+
                 <p class="tweet-body"> <%= data[i]["tweet"] %></p>
                 <p> <%= data[i]["time"] %></p>
             </div>
@@ -507,27 +945,36 @@
 
                 <div class="footer-icons">
 
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
-                        </svg>
-                        
-                        
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-repeat" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
-                            <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
-                        </svg>  
-                        
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                        </svg>  
-        
-        
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-bar-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
-                        </svg>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                    </svg>
 
 
-                    </div>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-repeat" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                        <path fill-rule="evenodd"
+                            d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                    </svg>
+
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                    </svg>
+
+
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-bar-up" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+
+
+                </div>
 
             </div>
             <hr style="border-bottom: 1px solid #d3d3d3;">
@@ -536,22 +983,238 @@
         </div>
 
     </div>
-   
 
-     
+
+
 
 
     <div class="right-column">
         <div class="search">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-             </svg>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                <path fill-rule="evenodd"
+                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+            </svg>
             <p class="search-content">Search Twitter</p>
 
         </div>
 
+        <div class="updates">
+            <div class="updates-header">
+                <p style="margin-bottom: 0px;">What's happening</p>
+            </div>
+
+            <hr style="border:.5px solid #d3d3d3; margin: 0px; margin-bottom: 5px;">
+
+            <div class="update-1">
+                <div class="news-1">
+                    <p class="sub-newsheading">IPL 2020 Live</p>
+                    <p class="news-content">IPL: Kings XI Punjab take on Chennai Super Kings</p>
+                </div>
+                <img src="https://wallpapercave.com/wp/wp7487875.jpg" alt="ipl image" srcset="" class="ipl-image">
+
+            </div>
+            <div class="above-hash">
+                <p class="before-hash">Trending with
+                <p class="hashtag" style="margin-left: 10px; color:#1DA1F2;">#MSDHONI, #CSKvKXIP</p>
+                </p>
+            </div>
+            <hr style="border:.5px solid #d3d3d3; margin: 0px; margin-bottom: 5px;">
+
+            <div class="update-1">
+                <div class="news-1">
+                    <p class="sub-newsheading">Covid 19 Live</p>
+                    <p class="news-content">COVID-19 in India</p>
+                </div>
+                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2020%2F07%2F09%2Fsurgical-paper-face-mask-BIGTIPTIGHT0720.jpg"
+                    alt="ipl image" srcset="" class="ipl-image">
+
+            </div>
+
+            <hr style="border:.5px solid #d3d3d3; margin: 0px; margin-bottom: 5px;">
+
+
+            <div class="update-1">
+                <div class="news-1">
+                    <p class="sub-newsheading">Entertainment Live</p>
+                    <p class="news-content">Bigg Boss season 14: Here’s the latest from the house</p>
+                </div>
+                <img src="https://static.toiimg.com/photo/msid-64429593/64429593.jpg?71185" alt="ipl image" srcset=""
+                    class="ipl-image">
+
+            </div>
+
+            <hr style="border:.5px solid #d3d3d3; margin: 0px; margin-bottom: 5px;">
+            <div class="update-1">
+                <div class="news-1">
+                    <p class="sub-newsheading">World News Last Night</p>
+                    <p class="news-content">French police say an Orthodox priest was shot in Lyon</p>
+                </div>
+                <img src="https://s.abcnews.com/images/International/WireAP_fc40907331824b5eb2786d0bef28076d_16x9_992.jpg"
+                    alt="ipl image" srcset="" class="ipl-image">
+
+            </div>
+
+            <hr style="border:.5px solid #d3d3d3; margin: 0px; margin-bottom: 5px;">
+
+            <div class="show-more" style="font-size: small; padding-left: 10px; margin-top: 10px;  color:   #1DA1F2;">
+                Show more
+            </div>
+
+
+        </div>
+
+        <div class="follow-section">
+
+            <div class="updates-header">
+    
+                <p class="follow-header">Who to Follow</p>
+    
+            </div>  
+            
+            <hr style="border:.5px solid #d3d3d3; margin: 0px; margin-bottom: 5px;">
+
+            <div class="follow-container">
+
+                <div class="follow-content">
+
+                    <img src="https://pbs.twimg.com/profile_images/3460469575/585e49a18c126bf5bb2f49ecfe117526_400x400.jpeg" alt="" class="img-follow">
+    
+                    <div class="follow-content1">
+                        
+                        <div class="content2">
+                        <h6 style="margin: 0%;">ADG PI - INDIAN ARMY</h4>
+                        <p style="margin: 0%; color: #778899; font-size: 15px;">@adgpi</p>
+                        </div>
+        
+                        <img class="follow-icon" style="margin-left: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png" alt="">
+                            
+                        <buttton class="follow-button">Follow</buttton>
+                    </div> 
+                
+                </div>
+
+                <hr style="border:.5px solid #d3d3d3; margin: 0px; margin-bottom: 5px;">
+
+                
+                <div class="follow-content">
+
+                    <img src="https://pbs.twimg.com/profile_images/1297475172086059008/vNJslzTm_400x400.jpg" alt="" class="img-follow">
+    
+                    <div class="follow-content1">
+                        
+                        <div class="content2">
+                        <h6 style="margin: 0%;">ICC</h4>
+                        <p style="margin: 0%; color: #778899; font-size: 15px;">@ICC</p>
+                        </div>
+        
+                        <img class="follow-icon"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png" alt="">
+                            
+                        <buttton style="margin-left:154px;" class="follow-button">Follow</buttton>
+                    </div> 
+                
+                </div>
+                
+                <hr style="border:.5px solid #d3d3d3; margin: 0px; margin-bottom: 5px;">
+           
+                <div class="follow-content">
+
+                    <img src="https://pbs.twimg.com/profile_images/1323664537770323968/vD4Ifa_b_400x400.jpg" alt="" class="img-follow">
+    
+                    <div class="follow-content1">
+                        
+                        <div class="content2">
+                        <h6 style="margin: 0%;">IndiaToday</h4>
+                        <p style="margin: 0%; color: #778899; font-size: 15px;">@IndiaToday</p>
+                        </div>
+        
+                        <img class="follow-icon"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png" alt="">
+                            
+                        <buttton style="margin-left: 105px;" class="follow-button">Follow</buttton>
+                    </div> 
+                
+                </div>
+                
+                <hr style="border:.5px solid #d3d3d3; margin: 0px; margin-bottom: 5px;">
+
+                <div class="follow-content">
+
+                    <img src="https://pbs.twimg.com/profile_images/1262261228652675072/Pl_u58Pb_400x400.jpg" alt="" class="img-follow">
+    
+                    <div class="follow-content1">
+                        
+                        <div class="content2">
+                        <h6 style="margin: 0%;">Amitabh Bachchan</h4>
+                        <p style="margin: 0%; color: #778899; font-size: 15px;">@SrBachchan</p>
+                        </div>
+        
+                        <img class="follow-icon" style="margin-left: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png" alt="">
+                            
+                        <buttton style="margin-left: 45px;" class="follow-button">Follow</buttton>
+                    </div> 
+                
+                </div>
+                
+                <hr style="border:.5px solid #d3d3d3; margin: 0px; margin-bottom: 5px;">
+
+                <div class="follow-content">
+
+                    <img src="https://pbs.twimg.com/profile_images/1323550440571559936/Sa5crqyr_400x400.jpg" alt="" class="img-follow">
+    
+                    <div class="follow-content1">
+                        
+                        <div class="content2">
+                        <h6 style="margin: 0%;">BCCI</h4>
+                        <p style="margin: 0%; color: #778899; font-size: 15px;">@BCCI</p>
+                        </div>
+        
+                        <img class="follow-icon"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png" alt="">
+                            
+                        <buttton style="margin-left: 145px;" class="follow-button">Follow</buttton>
+                    </div> 
+                
+                </div>
+                
+                <hr style="border:.5px solid #d3d3d3; margin: 0px; margin-bottom: 5px;">
+
+                <div class="follow-content">
+
+                    <div class="follow-content1" style="margin: 0px;">
+                        
+                        <div class="content2">
+                            <p style="color: #1DA1F2; font-size: 14px; margin-top: 5px; margin-left: 10px; margin-bottom: 0px;">Show more</p>
+                        </div>
+        
+                    </div> 
+                
+                </div>
+              
+
+               
+
+            </div>
+
+              
+        </div>
+
+
     </div>
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -563,6 +1226,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
+
+    <script>
+        // function myFunction() {
+        //     var navbar = document.getElementById('list');
+        //     navbar.classList.toggle('show');
+        // } 
+
+        function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+        }
+
+    </script>
+
 </body>
 
 </html>
