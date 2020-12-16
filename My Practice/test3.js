@@ -1,35 +1,21 @@
 
 
-// var input = false;
 
+var a = 'd';
+var b;
 
-// var a = new Promise ( (resolve, reject)  => {
+function blank (a) {
+ 
+//  b = a.length;
+ 
+ if (a.length === 0) {
+     return 'its blank';
+ }
 
+ else if (a.length !== 0) {
+     return 'its not blank';
+ }
 
-//     if (input === true) {
+}
 
-//         resolve('promise completed');
-//     }
-
-//     else 
-    
-//     reject ('promise rejected');
-
-// })
-
-// a.then((x)=> {
-//     console.log(x);
-//     return x;
-// }).then((x)=>{
-// console.log(x);
-
-// }).catch(()=> {
-
-// console.log('Promise is rejected');
-
-
-
-// })
-
-
-
+console.log(blank(a));

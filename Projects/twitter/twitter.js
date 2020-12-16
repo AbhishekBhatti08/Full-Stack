@@ -49,13 +49,19 @@ app.post("/postTweet",(req,res)=>{
     // console.log(data);
     // data["time"] = new Date()
     var sql = `insert into tweets set ?`;
+    var sort = 'select * from tweets order by ts desc';
+    
     console.log(req.body);
     db.query(sql,data,(err,results)=>{
         if(err){
             console.log("Tweet not saved!")
         }
         else{
-            console.log("Tweet saved!")
+            
+                db.query(sort,(err,result)=>{
+                if (err) throw err;
+                console.log("Tweet saved!");
+            });
         }
     })
     setTimeout(() => {
