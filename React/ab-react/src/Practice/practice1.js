@@ -1,13 +1,14 @@
 import React from "react";
 
-import "../src/practice1.css";
+import "../Practice/practice1.css";
 
-function practice1 (props) {
-return <div classname="abc">
+function Practice1 (props) {
+return <div className="practice1">
 <p> {props.name}</p>
 <p> {props.age}</p>
+<input onChange= {props.changed}></input>
         
 </div>
 }
 
-export default practice1;
+export default Practice1;

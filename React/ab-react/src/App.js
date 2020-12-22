@@ -1,26 +1,126 @@
 import logo from './logo.svg';
 import './App.css';
-import './Practice/practice1'
+import Practice1 from './Practice/Practice1';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+// class Car extends Component {
+//   render() {
+//     return <h2>I am a {this.props.brand}!</h2>;
+//   }
+// }
+
+
+
+class App extends Component {
+
+  state = {
+
+    firstName: '',
+
+    Persons: [
+      {name:'Abhishek', age:22},
+      {name:'Shrey', age:27},
+      {name:'Amit', age:26}
+    ],
+
+    isActive: true,
+
+    
+
+  };
+
+ Show = () => {
+
+  console.log("Show");
+  this.setState({isActive:true});
+
+  var NewPersons =[
+    {name:'Abhishek1', age:22},
+    {name:'Shrey1', age:27},
+    {name:'Amit1', age:26}
+  ]
+  
+  this.setState({Persons:NewPersons})
+  
+};
+
+
+Hide = () => {
+
+  console.log("Hide");
+  this.setState({isActive:false})
+}
+
+
+changeName =(event) => {
+this.setState({
+  firstName: event.target.value,
+})
+}
+
+
+DynamicChange = (event) =>{
+
+  var x = this.state.Persons.name;
+  this.setState({x: event.target.value,
+  })
+}
+
+// Brand =(a) => {
+//   this.setState({
+//     value: a.target.value,
+//   })
+//   }
+
+
+
+
+// ChangeText=()=> {
+// var NewPersons =[
+//   {name:'Abhishek1', age:22},
+//   {name:'Shrey1', age:27},
+//   {name:'Amit1', age:26}
+// ]
+
+// this.setState({Persons:NewPersons})
+// }
+
+ 
+  render() {
+
+    return (
+
+     <div className="App">
+       
+       
+      <button onClick={this.Show}>Show name!</button>
+      <button onClick={this.Hide}>Hide name!</button>
+
+      
+      {this.state.isActive?
+      <div>
+      <h1>Hi .. Here are the details</h1>
+      <h3>first name: {this.state.firstName}</h3>
+      {/* <Car brand = " " /> */}
+      <Practice1 name={this.state.Persons[0].name} age ={this.state.Persons[0].age} changed = {this.DynamicChange}/>
+      <Practice1 name={this.state.Persons[1].name} age ={this.state.Persons[1].age} />
+      <Practice1 name={this.state.Persons[2].name} age ={this.state.Persons[2].age} />
+      
+      <input onChange={this.changeName}></input>
+
+      <br />
+      <br />
+
+      {/* <input value={this.props.name} onChange={this.Brand}></input> */}
+      </div>:null}
+      </div>
+      
+    );
+
+  }
+
 }
 
 export default App;
