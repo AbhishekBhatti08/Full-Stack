@@ -20,9 +20,9 @@ class App extends Component {
     firstName: '',
 
     Persons: [
-      {name:'Abhishek', age:22},
-      {name:'Shrey', age:27},
-      {name:'Amit', age:26}
+      {name:'Abhishek', age:22, id: 1},
+      {name:'Shrey', age:27, id: 2},
+      {name:'Amit', age:26, id: 3}
     ],
 
     isActive: true,
@@ -37,9 +37,9 @@ class App extends Component {
   this.setState({isActive:true});
 
   var NewPersons =[
-    {name:'Abhishek1', age:22},
-    {name:'Shrey1', age:27},
-    {name:'Amit1', age:26}
+    {name:'Abhishek1', age:22, id: 1},
+    {name:'Shrey1', age:27, id: 2},
+    {name:'Amit1', age:26, id: 3}
   ]
   
   this.setState({Persons:NewPersons})
@@ -63,9 +63,24 @@ this.setState({
 
 DynamicChange = (event) =>{
 
-  var x = this.state.Persons.name;
-  this.setState({x: event.target.value,
-  })
+ 
+
+  // this.setState({newId:event.target.value})
+
+
+ var newData = [  ...this.state.Persons]
+
+  console.log(newData);
+    console.log(event.target.id);
+  newData[event.target.id-1].name = event.target.value;
+  // var newId = event.target.id;
+
+  // console.log(event.target.id);
+
+  // var x = this.state.Persons[0];
+  this.setState({Persons: newData})
+
+  
 }
 
 // Brand =(a) => {
@@ -90,6 +105,20 @@ DynamicChange = (event) =>{
  
   render() {
 
+    let allPersons = null;
+    if (this.state.isActive) {
+      allPersons = <div>
+        {
+          this.state.Persons.map((Person) => {
+
+            return <Practice1 name = {Person.name} age = {Person.age} changed = {this.DynamicChange} id = {Person.id} />
+
+
+          })
+        }
+      </div>
+    }
+
     return (
 
      <div className="App">
@@ -104,10 +133,13 @@ DynamicChange = (event) =>{
       <h1>Hi .. Here are the details</h1>
       <h3>first name: {this.state.firstName}</h3>
       {/* <Car brand = " " /> */}
-      <Practice1 name={this.state.Persons[0].name} age ={this.state.Persons[0].age} changed = {this.DynamicChange}/>
+      {/* <Practice1 name={this.state.Persons[0].name} age ={this.state.Persons[0].age} changed = {this.DynamicChange}/>
       <Practice1 name={this.state.Persons[1].name} age ={this.state.Persons[1].age} />
       <Practice1 name={this.state.Persons[2].name} age ={this.state.Persons[2].age} />
+       */}
+
       
+
       <input onChange={this.changeName}></input>
 
       <br />
@@ -115,6 +147,8 @@ DynamicChange = (event) =>{
 
       {/* <input value={this.props.name} onChange={this.Brand}></input> */}
       </div>:null}
+
+      {allPersons}
       </div>
       
     );
