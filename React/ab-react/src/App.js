@@ -73,41 +73,31 @@ DynamicChange = (event) =>{
   console.log(newData);
     console.log(event.target.id);
   newData[event.target.id-1].name = event.target.value;
-  // var newId = event.target.id;
 
-  // console.log(event.target.id);
-
-  // var x = this.state.Persons[0];
-  this.setState({Persons: newData})
-
+  // newData[event.target.id-1] = null;
   
+  this.setState({Persons: newData})
+  
+    
 }
 
-// Brand =(a) => {
-//   this.setState({
-//     value: a.target.value,
-//   })
-//   }
+showDiv =(event) => {
+
+  var x = [ ...this.state.Persons]
+
+  console.log(x);
+
+  x[event.target.id-1]=null;
+
+  this.setState({Persons:null});
+}
 
 
-
-
-// ChangeText=()=> {
-// var NewPersons =[
-//   {name:'Abhishek1', age:22},
-//   {name:'Shrey1', age:27},
-//   {name:'Amit1', age:26}
-// ]
-
-// this.setState({Persons:NewPersons})
-// }
-
- 
   render() {
 
     let allPersons = null;
     if (this.state.isActive) {
-      allPersons = <div>
+      allPersons = <div onClick = {this.showDiv}>
         {
           this.state.Persons.map((Person) => {
 
