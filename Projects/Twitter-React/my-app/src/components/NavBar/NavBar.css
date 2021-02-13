@@ -1,0 +1,14 @@
+.Nav{
+    width: 500px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: chartreuse;
+    
+}
+
+.tag {
+    margin-left: 10px;
+    margin-right: 10px;
+}

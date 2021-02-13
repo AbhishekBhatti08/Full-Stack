@@ -1,0 +1,27 @@
+/* .SidePanel {
+    
+} */
+
+.toggleButton {
+    padding: 0px;
+    margin: 0px;
+    margin-right: 5px;
+    text-align: end;
+    font-weight: bolder;
+}
+
+.nav-menu{
+    background-color: cadetblue;
+    width: 10vw;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    left: -100%;
+    transition: 3000ms;
+}
+
+.nav-menu-active{
+left: 0;
+transition: 3000ms;
+}
+

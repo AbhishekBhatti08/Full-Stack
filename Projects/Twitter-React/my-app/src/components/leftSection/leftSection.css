@@ -1,0 +1,40 @@
+
+.left-section{
+    width: 200px;
+    border-right: .5px solid #cccccc;
+    height: 100% vh;
+}
+
+.twitterLogo-outline {
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 50px;
+    width: 45px;
+    /* background-color: brown; */
+}
+
+
+.twitter-logo{
+color: #8ed1fc;
+margin-left: 2px;
+margin-top: 2px;
+width: 40px;
+height: 40px;
+}
+
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.link-icon{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+Button {
+
+    margin-left: 10px;
+
+}

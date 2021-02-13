@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-outline{
+    width: 180px;
+    height: 320px;
+    background-color:white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+h5{
+    border: none;
+    padding: none;
+    margin: 0px;
+    text-align: left;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.missionID{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:darkslateblue;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
