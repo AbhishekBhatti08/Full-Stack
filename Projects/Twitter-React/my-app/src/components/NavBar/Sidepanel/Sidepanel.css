@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.profile-link {
+    display: flex;
+    align-items: center;
+}
+
+.person-outline{
+    /* color: orange; */
+    margin-left: 10px;
+    width: 1.2em;
+    height: 1.2em;
+    color: #657786;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
+.Profile-1 {
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+}
+
+.logOut {
+    margin-left: 10px;
+}

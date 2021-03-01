@@ -1,5 +1,22 @@
+
+.main-container {
+    width: 600px;
+    border-right: 1px solid #E1E8ED;
+
+}
+
 .write-tweet{
     background-color: #cccc;
     /* border: .5px solid #cccccc; */
     height: 200px;
+}
+
+@media (max-width:600px){
+    
+    .main-container{
+
+        width: 100%;
+
+    }
+
 }

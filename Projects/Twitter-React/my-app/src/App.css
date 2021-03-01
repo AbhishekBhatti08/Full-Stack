@@ -1,4 +1,8 @@
 .container{
   display: flex;
+  left: 0;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100vw;
 }
 

@@ -160,4 +160,17 @@
   }
   
   @media screen and (max-width: 768px) {
+    .footer-links {
+      margin-left: 60px;
+    }
+
+    .footer-link-items {
+      /* margin-top: 50px; */
+    }
+
+    .social {
+      margin-top: 42px;
+    }
+
+
   }

@@ -1,0 +1,109 @@
+
+
+.top-section {
+    margin-top: 20px;
+    display: flex;
+}
+
+.status {
+    width: 520px;
+    
+}
+
+.person {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.text-area {
+    border: none;
+    width: 490px;
+    border: 1px solid #DCDCDC;
+}
+
+.status-message {
+    display: flex;
+    align-items: center;
+}
+
+.status-text {
+    margin-left: 10px;
+}
+
+.Globe {
+    width: 25px;
+    height: 25px;
+    color: #1DA1F2;
+    cursor: pointer;
+}
+
+
+.status-images{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    color: #1DA1F2;
+    cursor: pointer;
+}
+
+
+
+.image-outline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tweet-submit {
+    border-radius: 20px;
+    background-color: #1DA1F2;
+    color: white;
+    border:none;
+    font-weight: 600;
+    width: 70px;
+    height: 30px;
+    margin-right: 20px;
+   
+}
+
+.tweet-submit:hover{
+    cursor: pointer;
+    background-color: #3C99DC;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .PostTweet{
+        width: 100%;
+    }
+
+    .top-section {
+        width: 100%;
+    }
+
+    .status {
+        width: 100%;
+        /* background-color: blue; */
+    }
+
+    .image-outline {
+        width: 100%;
+        
+    }
+
+    .text-area {
+        width: 95%;
+       
+    }
+    
+
+
+}
