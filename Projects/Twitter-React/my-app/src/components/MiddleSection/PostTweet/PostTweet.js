@@ -31,17 +31,17 @@ function PostTweet() {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: { text: text },
-                    url: url
+                    url: url,
                 };
 
-        axios(requestOptions,data).then(response=>{
-               console.log(response)
-           }).catch(error=>{
-               console.log(error)
-           })
+        // axios(requestOptions,data).then(response=>{
+        //        console.log(response)
+        //    }).catch(error=>{
+        //        console.log(error)
+        //    })
 
-        // fetch(url, requestOptions).then(response=>response.json().then(
-        // data=>console.log(data))).catch(error=>console.log(error));
+        fetch(url, requestOptions).then(response=>response.text().then(
+        data=>console.log(data))).catch(error=>console.log(error));
 
     };
 

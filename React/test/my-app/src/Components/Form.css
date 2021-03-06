@@ -1,0 +1,30 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input {
+    width: 30vw;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+.text-area {
+    width: 30vw;
+    margin: auto;
+}
+
+.tweet-submit {
+    margin-top: 10px;
+    
+}
+
+.tweet-submit:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 20px;
+    height: 25px;
+}

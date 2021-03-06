@@ -1,6 +1,10 @@
+body {
+    box-sizing: border-box;
+}
+
 video {
     object-fit: cover;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: fixed;
     z-index: -1;
@@ -44,17 +48,17 @@ video {
 }
 
 @media screen and (max-width: 960px){
-/* 
+
     .hero-container {
-        width: 100%;
-    } */
+        width: 100vw;
+    }
 
     .hero-container > h1 {
         font-size: 70px;
         margin-top: -150px;
     }
     video {
-        width: 100%;
+        width: 100vw;
     }
     
 
@@ -83,8 +87,12 @@ video {
         width: 100%;
     }
 
+    .hero-container {
+        width: 100vw;
+    }
+
     video {
-        width: 100%;
+        width: 100vw;
     }
 
 }

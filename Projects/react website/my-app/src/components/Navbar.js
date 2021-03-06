@@ -18,8 +18,6 @@ function Navbar() {
     }
   };
 
-
-
   useEffect(() => {
     showButton();
   }, []);

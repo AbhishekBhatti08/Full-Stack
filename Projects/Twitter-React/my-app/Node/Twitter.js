@@ -7,7 +7,7 @@ const app  = express();
 
 app.use(cors);
 
-app.use(bodyParser.urlencoded({ extended: true}))
+app.use(bodyParser.urlencoded({ extended: true}));
 
 const db = mysql.createConnection({
     host:"localhost",
@@ -49,7 +49,7 @@ app.post("/postTweet",(req,res)=>{
     var data = req.body;
     console.log(data);
 
-     res.send('data from backend');
+    res.send('data from backend');
     
 
     var sql = `insert into tweets set ?`;
