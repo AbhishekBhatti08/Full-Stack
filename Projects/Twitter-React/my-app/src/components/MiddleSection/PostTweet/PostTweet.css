@@ -3,6 +3,7 @@
 .top-section {
     margin-top: 20px;
     display: flex;
+    border-bottom: 1px solid #E1E8ED;
 }
 
 .status {
@@ -54,6 +55,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .tweet-submit {
@@ -73,6 +75,97 @@
     background-color: #3C99DC;
 }
 
+
+/* Printing Tweets */
+
+.Tweets {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 10px;
+     margin-top: 20px;
+    
+}
+
+.outer-body{
+    border-bottom: 1px solid #E1E8ED;
+
+}
+
+.outer-body:hover {
+    cursor: pointer;
+    background-color: #F5F8FA;
+}
+
+.tweet-body {
+    display: flex;
+    height: 120px;
+    margin-top: 10px;
+    
+    /* background-color: lime; */
+}
+
+
+.tweet-sub {
+    display: flex;
+}
+.tweet-top{
+    /* background-color: khaki; */
+    display: flex;
+    align-items: flex-start;
+    height: none;
+}
+
+.user-name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: none;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.user-name1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: none;
+    font-weight: 400;
+    color: lightslategray;
+    margin-left: 5px;
+}
+ 
+.person-tweet {
+    width: 50px;
+    height: 50x;
+}
+
+.check-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.tweet-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+
+.tweet-bottom-icons {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-left: 55px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #AAB8C2;
+}
+
+.tweet-bottom-icons-color:hover{
+    background-color: #657786;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 

@@ -2,6 +2,7 @@ const express = require("express");
 const mysql = require('mysql');
 // const bodyParser = require("body-parser");
 const cors = require('cors');
+const { request, response } = require("express");
 
 const app  = express();
 
@@ -28,59 +29,69 @@ app.use(express.static('public'))
 app.set("view engine","ejs");
 
 
-app.get('/',(req,res)=>{
-    var query = `select * from tweets;`;
-    var data;
-    db.query(query,(err,results)=>{
-        if(err){
-            console.log("you fucked up!")
-        }
-        else{
-            return results;
-        }
-    })
-    // console.log("data->",data)
+// app.get('/',(req,res)=>{
+//     var query = `select * from tweets;`;
+//     var data;
+//     db.query(query,(err,results)=>{
+//         if(err){
+//             console.log("you fucked up!")
+//         }
+//         else{
+//             return results;
+//         }
+//     })
+//     console.log("data->",data)
+// })
+
+
+app.post("/Hello",(request,response)=>{
+
+    console.log("Post Request Reached");
+    console.log(request.body);
+    let data = "Hello";
+    response.send(data);
+
 })
 
 
-app.post("/postTweet",(req,res)=>{
-    console.log("hello");
-    console.log(req.body);
-    var data = req.body;
-    console.log(data);
+// app.post("/postTweet",(req,res)=>{
+//     console.log("hello");
+//     console.log(req.body);
+//     var data = req.body;
+//     console.log(data);
 
-    res.send('data from backend');
+//     res.send('data from backend');
 
-    var sql = `insert into tweets set ?`;
-    var sort = 'select * from tweets order by ts desc';
+//     var sql = `insert into tweets set ?`;
+//     var sort = 'select * from tweets order by ts desc';
     
-    console.log(req.body);
-    db.query(sql,data,(err,results)=>{
-        if(err){
-            console.log("Tweet not saved!")
-        }
-        else{    
-                db.query(sort,(err,result)=>{
-                if (err) {throw err,
-                console.log("Tweet saved!")
-                }
+//     console.log(req.body);
+//     db.query(sql,data,(err,results)=>{
+//         if(err){
+//             console.log("Tweet not saved!")
+//         }
+//         else{    
+//                 db.query(sort,(err,result)=>{
+//                 if (err) {throw err,
+//                 console.log("Tweet saved!")
+//                 }
 
-                else {
-                    return result;
-                }
-            });
-        }
+//                 else {
+//                     return result;
+//                 }
+//             });
+//         }
     
-    })   
-    setTimeout(() => {
-        res.redirect("http://localhost:3000");
-    }, 1000);
+//     })   
+//     setTimeout(() => {
+//         res.redirect("http://localhost:3000");
+//     }, 1000);
     
 
-}
+// }
 
 
-)
+// )
 
 app.listen(port, function(){
     console.log(`App running on ${port}`)

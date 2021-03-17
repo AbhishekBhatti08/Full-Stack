@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import {React, useState, useEffect} from 'react';
 import './Form.css';
 import PrintTweets from './PrintTweets/PrintTweets';
 import axios from 'axios';
@@ -17,32 +17,25 @@ function Form() {
         text: text,
     };
 
+
+
     const handleSubmit=(event)=>{
-        event.preventDefault();
-        console.log(data);
-        let url = "http://localhost:4000/postTweet";
-        console.log(url);
+        console.log("Form Submitted");
+        // console.log(data);
+        fetch('http://localhost:4000/Hello', {
+                method: "POST",
+                body: JSON.stringify("Hello"),
+                headers: {"Content-type": "application/json;charset=UTF-8"}
+              })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(err => console.log(err));
+            event.preventDefault();
+        
+        }
 
-        // const requestOptions = {
-        //             method: 'POST',
-        //             headers: { 'Content-Type': 'application/json' },
-        //             body: { data },
-        //             url: url,
-        //         };
 
-        axios.post(url,data).then(response=>{
-               console.log(response)
-           }).catch(error=>{
-               console.log(error)
-           })
 
-        // fetch(url, requestOptions).then(response=>response.text().then(
-        // data=>console.log(data))).catch(error=>console.log(error));
-
-        // fetch(url, requestOptions).then(response=>response.text().then(
-        // data=>console.log(data))).catch(error=>console.log(error));   
-
-    };
 
     return (
         <div>
