@@ -12,15 +12,22 @@ function Form() {
 
     const [stateApp, setAppState] = useState([]);
 
+    const [status, setStatus] = useState(false);
+
+
     useEffect(() => {
         
         let url = "http://localhost:4000/";
         axios.get(url)
-        .then(res=> {console.log(res)
+        .then(res=> {console.log(res);
         setAppState(res.data)})
         .catch(err => console.log(err))
 
-    }, [setAppState]);
+        setStatus(false);
+        console.log('state updated');
+
+        
+    }, [status]);
 
     
 
@@ -43,13 +50,28 @@ function Form() {
                     'Content-Type': 'application/json', 
                   }
               })
-            .then(response => response.text())
-            .then(data => console.log(data))
+            // .then((response) => response.text())
+            // .then((response)=> {
+            //     if (response.statusText==='Hello') {
+            //         setStatus(true);
+            //         console.log(status);
+            //     }
+            //     console.log(response);
+            // })
+            .then(response=> response.json())
+            .then((data) =>{
+                console.log(data);
+                if (data.message==="Hello") {
+                    setStatus(true);
+                    console.log(status);
+
+                }
+            })
             .catch(err => console.log(err));
-
-
-            window.location.reload();
-             
+            
+            
+            // window.location.reload();
+            event.target.reset();
 
         }
 

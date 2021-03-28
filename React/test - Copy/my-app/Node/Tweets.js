@@ -57,8 +57,7 @@ app.post("/Hello",(req,res)=>{
     console.log(req.header('Content-Type'))
     console.log("Post Request Reached");
     console.log("req" , req.body.text);
-    let sendData = "Hello";
-    res.send(sendData);
+   
     
     let data = req.body;
     var sql = 'INSERT INTO tweettext SET ?';
@@ -70,20 +69,27 @@ app.post("/Hello",(req,res)=>{
         db.query(sql,data,(err,results)=>{
             if(err){
                 console.log("Tweet not saved!")
+                return;
             }
-            else 
+            else
             {    
-               
-               console.log("Tweet Saved");
+                
+                console.log("Tweet Saved");
+                // return res.sendStatus(200);
+                             
                            
             }
-            
-          
+
+           
         })   
         // setTimeout(() => {
         //     res.redirect("http://localhost:3000");
         // }, 1000);
         
+
+        // let sendData = "Hello";
+        // return res.send(sendData).json({ message: 'Hello' });
+        res.status(200).json({ message: 'Hello' });
 
 });
 
